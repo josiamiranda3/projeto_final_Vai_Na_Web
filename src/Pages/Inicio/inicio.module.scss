@@ -1,0 +1,141 @@
+.banner{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover; // para não haver sobra --preencher totalmente retirando se houver sobra
+    //background-size: contain; // vai se adequar a caixa mantendo a qualidade 
+    height: 88vh;
+    display: flex;
+    align-items: center;
+
+    h2{
+        color: white;
+        //border: solid 2px red;
+        margin-left: 150px;
+        font-size: 40px;
+        width: 26vw;
+        
+    }
+}
+
+.devoDoar{
+
+    height: 80vh;
+    //border: solid 2px red;
+    div{
+        //border: solid 2px yellow;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            margin-left: 60px;
+            color: #005695;
+        }
+    }
+}
+.boxCard{
+    //border: solid 2px green;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    article{
+        //border: solid 2px blue;
+        width: 20%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color:  #0157944D;
+        border-radius: 10px;
+        
+        p{
+            text-align: center; // centarlizar o texto
+            //border: solid 2px blue;
+            width: 70%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:1200px){
+
+    .banner{
+        background-size: cover;
+    }
+
+    .boxCard{
+        article{
+            p{
+                font-size: 1.4vw;
+            }
+        }
+    }
+}
+
+@media(max-width:860px){
+
+    .banner{
+        background-position: center;
+    }
+    .boxCard{
+        article{
+            width: 22%;
+            p{
+                font-size: 1.6vw;
+            }
+        }
+    }
+}
+
+@media(max-width: 760px){
+
+    .banner{
+
+        justify-content: center;
+        h2{
+            //border:solid 2px red;
+            width: 80%;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .devoDoar{
+        border: solid 2px green;
+        height: auto; //se ajustar com o que tem dentro
+        div{
+            border: solid 2px black;
+            justify-content: center
+            
+            h2{
+                margin-left: 0; 
+            };
+        }
+    }
+
+    .boxCard{
+        border: solid 2px yellow;
+        flex-wrap:  wrap; //processo de organização de caixa no momento em que há a redução
+       gap:10px; //cria  uma barreira entre os itens 
+        height: 80vh;
+        article{
+            width: 230px;
+            height: 38vh;
+
+            p{
+                 font-size: 15px;
+            }
+        }
+    
+    }
+
+}
+
+@media(max-widht: 477px){
+    .boxCard{
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

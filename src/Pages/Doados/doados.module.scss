@@ -1,0 +1,48 @@
+
+.boxDoados{
+//    border: solid 2px red;
+    // height: 70vh;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid 2px red;
+    margin-bottom: 30px;
+
+    h2{
+        // border: solid 2px rgb(177, 214, 13);
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+ .boxcard{
+ width: 85vw;
+//  height: 60vh;
+min-height: 60vh;
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ gap: 10px;
+ //border: solid 2px green;
+ border: solid 2px blue;
+ article{
+    border: solid 2px #005695;
+    width: 230px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+
+    img{
+        padding-bottom: 20px;
+        width: 30%;
+    }
+ }
+}
+

@@ -1,0 +1,140 @@
+//module do css modularizado, sendo que veio do css de outra forma 
+// sendo que conseguimos efetuar no escorpo global
+// module de modularização globas.scss - global
+
+header{
+    //border: solid 2px red;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
+    
+}
+
+.boxLogo{
+     
+    
+    //border: solid 2px yellow;
+    width: 23vw;
+    display: flex;
+    color: white;
+    align-items: center; // devido aos 2 itens
+    height:  14vh;
+    justify-content: space-evenly;
+ }
+
+ .boxMenu{
+
+    //border: solid 2px greenyellow;
+    width: 35vw;
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        
+        a{
+            color: white;
+            //font-size: 20px;
+        }
+    }
+
+ }
+
+ .boxInput{
+    border: solid 2px white;
+    width: 17vw;
+    height: 6vh;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    // padding-left: 15px;
+
+    input{
+        width: 12vw;
+        background-color: transparent;
+        outline: none; // clicar ficar com linha padrão, linhas nos textos 
+        border: none;
+        color: white;
+        font-size: 15px;
+          
+        // atribuir com o input querendo estilizar com o input
+        &::placeholder{
+            color: white;
+        }
+    }
+ }
+
+
+ @media(max-width: 1134px){
+
+     .boxLogo{
+        //border: solid 2px red;
+        width: 25vw;
+        h1{
+            font-size: 1.8vw;
+        }
+        img{
+            width: 5vw;
+        }
+     }
+
+     .boxMenu{
+        //border: solid 2px red;
+        ul{
+            font-size: 1.6vw;
+        }
+     }
+
+     .boxInput{
+        width: 18vw;
+        
+        input{
+            &::placeholder{
+                font-size: 1.2vw;
+            }
+        }
+     }
+
+ }
+
+ @media(max-width: 760px ){
+
+    header{
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .boxInput{
+        display: none;
+    }
+
+    .boxLogo{
+        width: 80%;
+        //justify-content: space-evenly;
+
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 60px;
+        }
+        
+    }
+
+    .boxMenu{
+        width: 100%;
+        ul{
+            justify-content: space-evenly;
+            font-size: 22px;
+        }
+    }
+ }
+
+
+// não podemos chamar uma ta que sera reutilizadas em outros sites.
+// link e uma tag a então quando chamar a{} lo lugar de link

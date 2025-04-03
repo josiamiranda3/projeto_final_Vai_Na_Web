@@ -1,0 +1,60 @@
+.principal{
+    border: solid 2px red;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+// novas mudanças 
+
+.container{
+    width: 60vw;
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2{
+        text-align: center;
+    }
+}
+
+form{
+    border: solid 2px #005695;
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+
+    div{
+       // border: solid 2px yellow;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #005695;
+    }
+    input{
+        width: 330px;
+        height: 35px;
+        border: solid 2px #005695;
+        border-radius: 10px;
+        outline: none;
+        padding-left: 20px;
+        &::placeholder{
+            color: black;
+        }
+    }
+}
+    .doar{
+        background-color: #005695;
+        padding-left: 0;
+        width: 150px;
+        height: 40px;
+        color: white;
+        font-size: 17px;
+    }

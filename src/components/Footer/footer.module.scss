@@ -1,0 +1,54 @@
+footer{
+    border: solid 2px red ;
+    height:  30vh;
+}
+
+.boxSocial{
+    background-color: #005695;
+    height: 20vh;
+    display: flex;
+    align-items: center;  // eixo y
+    justify-content: space-between;
+    padding-left: 50px;
+     padding-right: 50px;
+     color:  white;
+
+     nav{
+        border: solid 2px yellow;
+        width: 18vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+    
+}
+
+.boxEnd{
+    background-color: #232020;
+    color:  white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media(max-width: 1000px){
+    .boxSocial{
+        nav{
+            border: solid 2px plum;
+            width: 250px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .boxSocial{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .boxEnd{
+        text-align: center;
+    }
+}
